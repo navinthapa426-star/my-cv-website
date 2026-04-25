@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, ArrowRight, Briefcase, GraduationCap, Sparkles, Languages, Heart, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, Briefcase, GraduationCap, Sparkles, Languages, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import portrait from "@/assets/navin-portrait.jpg";
 
@@ -317,17 +317,9 @@ const Index = () => {
       <footer className="border-t border-border">
         <div className="container flex flex-col items-center justify-between gap-4 py-8 text-sm text-muted-foreground md:flex-row">
           <div>© {new Date().getFullYear()} Navin Thapa. All rights reserved.</div>
-          <div className="flex items-center gap-4">
-            <a href="mailto:thapanavin656@gmail.com" aria-label="Email" className="transition-colors hover:text-foreground">
-              <Mail className="h-4 w-4" />
-            </a>
-            <a href="#" aria-label="LinkedIn" className="transition-colors hover:text-foreground">
-              <Linkedin className="h-4 w-4" />
-            </a>
-            <a href="#" aria-label="GitHub" className="transition-colors hover:text-foreground">
-              <Github className="h-4 w-4" />
-            </a>
-          </div>
+          <a href="mailto:thapanavin656@gmail.com" className="inline-flex items-center gap-2 transition-colors hover:text-foreground">
+            <Mail className="h-4 w-4" /> thapanavin656@gmail.com
+          </a>
         </div>
       </footer>
     </div>
