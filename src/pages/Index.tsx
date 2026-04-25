@@ -1,6 +1,5 @@
 import { Mail, Phone, MapPin, ArrowRight, Briefcase, GraduationCap, Sparkles, Languages, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/navin-portrait.jpg";
 
 const experiences = [
   {
@@ -106,8 +105,8 @@ const Index = () => {
 
       {/* Hero */}
       <section id="top" className="relative overflow-hidden bg-gradient-hero">
-        <div className="container grid gap-12 py-20 md:grid-cols-[1.2fr_1fr] md:py-28 lg:py-32">
-          <div className="flex flex-col justify-center animate-fade-up">
+        <div className="container py-20 md:py-28 lg:py-32">
+          <div className="mx-auto flex max-w-4xl flex-col items-center text-center animate-fade-up">
             <span className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-muted-foreground shadow-card">
               <span className="h-2 w-2 rounded-full bg-accent" />
               Available for Summer Internship 2026
@@ -115,10 +114,10 @@ const Index = () => {
             <h1 className="font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
               Hi, I'm <span className="italic text-accent">Navin Thapa</span> — an IT student building hands-on support skills.
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
               Studying Information Technology at Metropolia University of Applied Sciences. I care about reliable systems, helpful service and turning small details into smooth experiences for end users.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Button asChild size="lg" className="bg-foreground text-background hover:bg-foreground/90">
                 <a href="#contact">
                   Hire me <ArrowRight className="ml-1 h-4 w-4" />
@@ -128,26 +127,10 @@ const Index = () => {
                 <a href="#experience">View experience</a>
               </Button>
             </div>
-            <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-accent" /> Kauniainen, Espoo</div>
               <div className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /> thapanavin656@gmail.com</div>
               <div className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /> +358 41 318 1275</div>
-            </div>
-          </div>
-          <div className="relative flex items-center justify-center">
-            <div className="absolute inset-0 -z-10 rounded-full bg-gradient-accent opacity-20 blur-3xl" />
-            <div className="relative aspect-square w-full max-w-sm overflow-hidden rounded-[2rem] border border-border bg-card shadow-soft">
-              <img
-                src={portrait}
-                alt="Portrait of Navin Thapa"
-                width={768}
-                height={768}
-                className="h-full w-full object-cover"
-              />
-            </div>
-            <div className="absolute -bottom-6 -left-4 hidden rounded-2xl border border-border bg-card px-5 py-3 shadow-card md:block">
-              <div className="text-xs uppercase tracking-wider text-muted-foreground">Studying at</div>
-              <div className="font-display text-lg font-semibold">Metropolia UAS</div>
             </div>
           </div>
         </div>
