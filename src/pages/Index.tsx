@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, ArrowRight, Briefcase, GraduationCap, Sparkles, Languages, Heart, Linkedin2 as _ignored } from "lucide-react";
+import { Mail, Phone, MapPin, ArrowRight, Briefcase, GraduationCap, Sparkles, Languages, Heart, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import portrait from "@/assets/navin-portrait.jpg";
 
